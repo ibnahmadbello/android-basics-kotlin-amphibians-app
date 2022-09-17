@@ -35,7 +35,8 @@ class AmphibianViewModel : ViewModel() {
 
     // TODO: Create properties to represent MutableLiveData and LiveData for a single amphibian object.
     //  This will be used to display the details of an amphibian when a list item is clicked
-
+    private val _amphibian = MutableLiveData<Amphibian>()
+    val amphibian: LiveData<Amphibian> = _amphibian
 
     private fun getAmphibianList(){
         viewModelScope.launch {
