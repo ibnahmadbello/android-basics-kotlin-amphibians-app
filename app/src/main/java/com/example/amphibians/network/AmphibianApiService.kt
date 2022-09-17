@@ -33,7 +33,7 @@ private val retrofit = Retrofit.Builder()
     .build()
 
 interface AmphibianApiService {
-    @GET("amphibians")
+    @GET("android-basics-kotlin-unit-4-pathway-2-project-api.json")
     suspend fun getAmphibians(): List<Amphibian>
 }
 
